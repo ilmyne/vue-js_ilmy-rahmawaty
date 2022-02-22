@@ -46,3 +46,78 @@ Pemanfaatan VCS salah satunya menggunakan Github
 ## GITHUB
 
 history perubahan dalam github = COMMIT
+## GIT INIT, CLONE, CONFIG
+
+untuk “download” repo menggunakan clone
+contoh : git clone (copas link repository yg akan diclone)
+
+## SAVING CHANGES
+
+untuk menyimpan area kerja, harus di*add* dahulu
+contoh : git add .
+
+selanjutnya file perlu di*wrap* menggunakan commit
+contoh : git commit -m “keterangan ketika commit”
+
+terakhir diperlukan push untuk dapat ditampilkan di repository
+contoh : git push origin
+
+## INSPECTING REPOSITORY
+
+menampilkan revisi lama
+contoh : git log - -oneline (minus, minus, gapake spasi)
+
+nah nanti muncul history revisi beserta kode uniknya.
+untuk mengakses menggunakan git checkout kode
+contoh : git checkout ajwy1788
+
+untuk kembali ke branch main, git checkout main
+
+## BRANCH
+
+### menampilkan list branch
+
+git branch - -list
+
+### membuat branch baru
+
+git branch (nama branch baru)
+
+### menghapus branch
+
+git branch -D (nama branch)
+
+### melihat remote branch
+
+git branch -a
+
+## MERGING
+
+### menambahkan fitur baru
+
+git checkout -b new-feature main
+
+### ngedit feature
+
+git add (file)
+
+trus dilanjut commit
+git commit -m “START FEATURE”
+
+ditutup dengan
+git add (file)
+git commit -m “FINISH FEATURE”
+
+### merge feature baru
+
+git checkout master
+git merge new-feature
+git branch -d new-feature
+
+## PULL REQUEST
+
+bisa langsung di githubnya, tapi perlu dicek apakah ada conflict atau tida
+
+jika ada conflict maka harus diselesaikan dahulu agar dapat diacc pull req nya
+
+biasanya kalo ada conflict dikarenakan ada 2 source/fungsi yang mirip, jadi harus milih salah satu
