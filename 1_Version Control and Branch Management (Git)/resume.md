@@ -121,3 +121,23 @@ bisa langsung di githubnya, tapi perlu dicek apakah ada conflict atau tida
 jika ada conflict maka harus diselesaikan dahulu agar dapat diacc pull req nya
 
 biasanya kalo ada conflict dikarenakan ada 2 source/fungsi yang mirip, jadi harus milih salah satu
+# TASK
+
+1. Apa itu Versioning
+mengatur versi dari source code program
+dapat meminimalisir adanya kerancuan data mana yang paling terupdate
+2. Git dapat memantau perubahan file pada
+semua perubahan yang terjadi pada file tersebut
+3. Commit dalam Git merupakan
+catatan setiap perubahan
+4. Git dapat diinstal dalam
+apple, windows, linux
+komapatibel dengan berbagai versi OS
+5. step sebelum staging area adalah
+working directory
+untuk menyimpan area kerja, harus di*add* dahulu
+contoh : git add .
+selanjutnya file perlu di*wrap* menggunakan commit
+contoh : git commit -m “keterangan ketika commit”
+terakhir diperlukan push untuk dapat ditampilkan di repository
+contoh : git push origin
