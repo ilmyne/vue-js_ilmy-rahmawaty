@@ -7,15 +7,17 @@ class user {
     var password;
 }
 
-class userservice{
+class userservice{//seharusnya userService, karena nama class
     user[] users = [];
     
     user[] getallusers() {
+    //seharusnya getAllUser
     //getallusers apa bedanya dengan users?
         return this.users;
     }
 
     user getuserbyid(userid) {
+    //getuserbyid diganti menjadi getUserID
     //parameter userid diganti menjadi id
         return this.users.filter(userid);
     }//pada line di atas seharusnya userid diganti menjadi id
@@ -47,14 +49,17 @@ void main(){
     mobillamban.berjalan();
 }
 
-class Kendaraan {
+//Penyelesaian Problem 2
+class kendaraan {
+//elemen class diwrap di contructor, sehingga ada nilainya yaitu mulai 0
+//dan agar nantinya mudah ketika class kendaraan dipanggil
     constructor() {
       this.roda = 0;
       this.kecepatan = 0;
     }
   }
   
-  class Mobil extends Kendaraan {
+  class mobil extends kendaraan {
     berjalan() {
       this.tambahKecepatan(10);
     }
