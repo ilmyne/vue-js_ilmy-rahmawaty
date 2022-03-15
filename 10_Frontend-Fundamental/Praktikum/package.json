@@ -1,0 +1,19 @@
+{
+  "name": "vue-js_ilmy-rahmawaty",
+  "version": "1.0.0",
+  "description": "npm init",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilmyne/vue-js_ilmy-rahmawaty.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilmyne/vue-js_ilmy-rahmawaty/issues"
+  },
+  "homepage": "https://github.com/ilmyne/vue-js_ilmy-rahmawaty#readme"
+}
