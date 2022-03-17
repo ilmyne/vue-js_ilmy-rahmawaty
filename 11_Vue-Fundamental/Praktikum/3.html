@@ -1,0 +1,56 @@
+<!-- <h1>HANYA UNTUK BELAJAR</h1> -->
+<!-- <h1>HANYA UNTUK BELAJAR</h1> -->
+<!-- <h1>HANYA UNTUK BELAJAR</h1> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEMO BELAJAR VUE JS</title>
+
+  <script src="https://unpkg.com/vue"></script>
+
+</head>
+<body>
+
+  <div id="app">
+      <!-- untuk memunculkan message -->
+      <div v-if="message.length > 10 ">OK</div>
+      <div> {{ message }}</div>
+      
+      <ol>
+        <li v-for="item in items">
+            {{ item }}
+        </li>
+      </ol>
+
+      <input id="input" type="text" v-model="newItem">
+        <button @click="addItem">Tambahkan</button>
+        <div v-if="items.length >= 4">Hebat!</div>
+
+  </div>
+
+
+  <script>
+    const app = Vue.createApp({
+      data() {
+        return {
+            message: "Halo Vue!"
+          items: []
+        }
+      },
+      methods:{
+                addItem() {
+                    this.items.push(this.newItem);
+                    this.newItem ='';
+                }
+            }
+    })
+
+    app.mount('#app')
+  </script>
+
+
+</body>
+</html>
