@@ -1,19 +1,35 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="App">
+    <ol>
+        <li v-for="item in items" v-bind:key="item">
+            {{ item }}
+        </li>
+      </ol>
+
+      <input id="input" type="text" v-model="list">
+        <button @click="addItem">Tambahkan</button>
+        <div v-if="items.length >= 4">Hebat!</div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
+export default ({
   name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  data() {
+    return {
+          list: "",
+          items: []
+        }
+      },
+      methods:{
+        addItem() {
+          if(this.list !=''){this.items.push( this.list )}
+          this.list='';
+                  }
+              }
+    })
+    
 </script>
 
 <style>
