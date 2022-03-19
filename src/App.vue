@@ -1,5 +1,6 @@
 <template>
   <div id="App">
+    <h1>{{ message }}</h1>
     <ol>
         <li v-for="item in items" v-bind:key="item">
             {{ item }}
@@ -18,6 +19,7 @@ export default ({
   name: 'App',
   data() {
     return {
+      message: "Ini adalah To Do List Ilmy",
           list: "",
           items: []
         }
