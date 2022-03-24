@@ -67,6 +67,8 @@ export default ({
                   },
 
         editItem(index, item) {
+          const currentValue = this.items[index];
+          this.list = currentValue;
           this.item = item
           this.selectedIndex = index
           this.isEdit = true
