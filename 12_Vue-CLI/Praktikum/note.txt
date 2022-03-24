@@ -1,1 +1,1 @@
-tugas praktikum 12_Vue-CLI ada di folder src
+tugas praktikum 12_Vue-CLI dan 13_Komponen-Vue ada di folder 12_Vue-CLI>Praktikum>App.vue
