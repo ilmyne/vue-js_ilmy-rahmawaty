@@ -20,12 +20,12 @@
 
       <div v-if="!isEdit">
       <input id="input" type="text" v-model="list">
-        <button @click="addItem">Tambahkan</button>
+        <br><button @click="addItem">Tambahkan</button>
       </div>
 
       <div v-else>
         <input id="input" type="text" v-model="list">
-        <button @click="updateItem">Update</button>
+        <br><button @click="updateItem">Update</button>
       </div>
       
         <!-- cara yg lain untuk membuat input dan submit -->
