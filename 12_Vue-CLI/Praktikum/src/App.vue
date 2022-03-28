@@ -7,28 +7,12 @@
       <router-link to="/contact">Contact</router-link>      
     </div>
 
-
-    <!-- BELAJAR DEMO KOMPONEN VUE -->
-    <!-- <input type="number" v-model.number="variabelSatu" />
-    <input type="number" v-model.number="variabelDua" />
-    <button @click="lakukanPenjumlahan">Lakukan Penambahan</button>
-    <div>Hasil: {{ hasil }}</div>
-    <AnakKomponen :hasilPenjumlahan="hasil" /> -->
-
     <h1>{{ message }}</h1>
     <ol>
         <li v-for="(item, index) in items" v-bind:key="item">
-            {{ item }}
-            <!-- menambahkan button edit dan hapus -->
-            <!-- <div v-if="!isUpdate">
-              <br><button @click="editItem(index, item)">Edit</button>              
-            </div>
-            <div v-else>              
-              <button @click="updateItem(index, item)">Edit</button>
-            </div> -->
+            {{ item }}            
             <br><button @click="editItem(index, item)">Edit</button>              
             <button @click="deleteItem(index)">Hapus</button>
-
         </li>
       </ol>
 
@@ -41,38 +25,21 @@
         <input id="input" type="text" v-model="list">
         <br><button @click="updateItem">Update</button>
       </div>
-      
-        <!-- cara yg lain untuk membuat input dan submit -->
-        <!-- <input type="text" v-model="list">
-        <input type="submit" value="Tambahkan" @click="addItem"> -->
-
         <div v-if="items.length >= 4">Hebat!</div>
   </div>
 </template>
 
 <script>
 
-// import AnakKomponen from '@/components/AnakKomponen.vue'
-// import { penambahan } from '@/utils'
-
 export default ({
   name: 'App',
-
-  // components: { AnakKomponen },
-
   data() {
     return {
       message: "Ini adalah To Do List Ilmy",
         isEdit: false,
-        isUpdate: false,
         selectedIndex: null,
           list: "",
           items: []
-
-      // variabelSatu: 0,
-      // variabelDua: 0,
-      // hasil: 0
-
         }
       },
       methods:{
@@ -92,18 +59,16 @@ export default ({
         updateItem() {
           this.items.splice(this.selectedIndex, 1, this.list)
           this.isEdit = false
-          // this.isUpdate = false
         },
 
         deleteItem(index) {
           this.items.splice(index, 1)
-        }
-
-          // lakukanPenjumlahan() {
-          //   this.hasil = penambahan(this.variabelSatu, this.variabelDua);
-          // }
-
-              }
+        },
+        redirect(list){
+          return this.$router.push({name: "DetailTask",
+          params:{title : list}});
+        },
+              },
     })
     
 </script>
