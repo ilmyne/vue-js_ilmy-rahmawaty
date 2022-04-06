@@ -1,5 +1,5 @@
 <template>
-    <div id="FirstNews">
+    <div id="Home">
     <h1 style="text-align: center;">Berita Terkini</h1>
 
 <div class="app" v-for="(page, index) in item  " :key="index"> 
@@ -44,11 +44,11 @@
 
 export default {
   
-    name: "FirstNews",
+    name: "Home",
     setup() {},
     methods: {
         nextNews() {
-            this.$router.push({ path: "/SecondNews" });
+            this.$router.push({ path: "/News" });
         },
     },
     computed: {

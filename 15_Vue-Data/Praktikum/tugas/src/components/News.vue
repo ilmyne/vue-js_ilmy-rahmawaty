@@ -1,5 +1,5 @@
 <template>
-  <div id="SecondNews" class="container" style="max-width: 1400px">
+  <div id="News" class="container" style="max-width: 1400px">
     <div class="App" v-for="(page, index) in item" :key="index">
       <div class="container">
         <table style="margin-top: 20px; margin-left: 100px">
@@ -21,7 +21,7 @@
 
 <script>
 export default {
-  name: "SecondNews" ,
+  name: "News" ,
   methods: {
     newsDetail() {
       this.$router.push({ path: "/"});

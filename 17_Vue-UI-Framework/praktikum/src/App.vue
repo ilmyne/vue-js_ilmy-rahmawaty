@@ -6,56 +6,43 @@
       color="primary"
       dark
     >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+      <Header/>
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <v-layout class="my-8">
+        <v-flex xs4 class="mx-auto">
+          <v-btn outlined @click="changeThemeColor('#B8255F')" class="my-2" color="#B8255F">Merah</v-btn>
+          <v-btn outlined @click="changeThemeColor('#7ecc49')" class="my-2" color="#7ecc49">Hijau</v-btn>
+        </v-flex>
+        </v-layout>
+        <v-layout class="my-8">
+        <v-flex xs4 class="mx-auto">
+          <v-text-field outlined label="username"></v-text-field>
+          <v-btn color="primary" block>Log in</v-btn>
+        </v-flex>
+      </v-layout>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+// import HelloWorld from './components/HelloWorld';
 
 export default {
   name: 'App',
 
-  components: {
-    HelloWorld,
-  },
+  // components: {
+  //   HelloWorld,
+  // },
 
   data: () => ({
     //
   }),
+  methods: {
+    changeThemeColor(color){
+      this.$vuetify.theme.themes.light.primary = color;
+    }
+  }
 };
 </script>

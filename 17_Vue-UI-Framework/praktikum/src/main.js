@@ -8,7 +8,15 @@ import "vuetify/dist/vuetify.min.css";
 Vue.config.productionTip = false;
 Vue.use(Vuetify);
 
-const vuetify = new Vuetify({});
+const vuetify = new Vuetify({
+  theme: {
+    themes: {
+        light: {
+            primary: "#96c3eb",
+        },
+    },
+},
+});
 
 new Vue({
   // router,
