@@ -24,9 +24,12 @@
     "eslint-plugin-vue": "^8.0.3",
     "sass": "~1.32.0",
     "sass-loader": "^10.0.0",
+    "stylus": "^0.57.0",
+    "stylus-loader": "^6.2.0",
     "vue-cli-plugin-vuetify": "~2.4.8",
     "vue-template-compiler": "^2.6.14",
-    "vuetify-loader": "^1.7.0"
+    "vuetify-loader": "^1.7.0",
+    "webpack": "^5.71.0"
   },
   "eslintConfig": {
     "root": true,
@@ -41,7 +44,14 @@
       "parser": "@babel/eslint-parser"
     },
     "rules": {
-      "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }]
+      "no-unused-vars": [
+        "error",
+        {
+          "vars": "all",
+          "args": "after-used",
+          "ignoreRestSiblings": false
+        }
+      ]
     }
   },
   "browserslist": [
