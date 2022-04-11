@@ -1,17 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>List Pokemon</h1>
+    <ul>
+      <li v-for="(pokemon, index) in pokemons" :key="index">
+        {{ pokemon.name }}
+      </li>
+    </ul>
+    <!-- {{ pokemons }} -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  computed: {
+    pokemons() {
+      return this.$store.state.listPokemon;
+    },
+  },
+  mounted() {
+    this.$store.dispatch('fetchPokemon');
   }
 }
 </script>

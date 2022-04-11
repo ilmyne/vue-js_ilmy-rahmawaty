@@ -36,7 +36,23 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "vue/multi-word-component-names": 0,
+      "no-unused-vars": [
+        "error",
+        {
+          "vars": "all",
+          "args": "after-used",
+          "ignoreRestSiblings": false
+        }
+      ],
+      "vue/no-parsing-error": [
+        "error",
+        {
+          "invalid-first-character-of-tag-name": false
+        }
+      ]
+    }
   },
   "browserslist": [
     "> 1%",
