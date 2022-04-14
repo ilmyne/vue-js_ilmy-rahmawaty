@@ -1,1 +1,1 @@
-tugas praktikum 13_Vue-Helpers dan 13_Komponen-Vue ada di folder 12_Vue-CLI>Praktikum>App.vue
+tugas praktikum 14_Vue-Helpers dan 13_Komponen-Vue ada di folder 12_Vue-CLI>Praktikum>App.vue
