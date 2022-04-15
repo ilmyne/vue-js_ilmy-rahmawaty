@@ -1,22 +1,29 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
+import axios from 'axios'
 const state = () => ({
-    List: [],
+    listMovie: [],
 })
 
 const mutations = {
-    setList(state, param) {
-    state.list = param;
+    setListMovie(state, param) {
+    state.listMovie = param;
 },
 }
 
 const actions = {
-    fetchMovie(store) {
-        this.$axios.$get("https://api.themoviedb.org/3/movie/now_playing?api_key=58100e983f07694bf0b11723c965d3b0&language=en-US&page=1")
-        .then((res) => {
-            store.commit("setList", res.results)
-        })
-        .catch((err) =>console.log('error',err))
+    fetchlistMovie(store) {
+        axios.get("https://api.themoviedb.org/3/movie/now_playing?api_key=58100e983f07694bf0b11723c965d3b0&language=en-US&page=1")
+        .then((response) => {
+            console.log("response", response)
+            store.commit("setlistMovie", response.data.results)
+        });
+        // .catch((err) =>console.log('error',err))
     },
-}
+};
 
-export {state, mutations, actions}
+export default {
+    state,
+    mutations,
+    actions,
+};
