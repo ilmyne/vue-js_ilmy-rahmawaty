@@ -1,5 +1,9 @@
 # 18_Work-Together-With-Product(Backend-And-Devops)
 
+#LINK DEPLOY NETLIFY
+https://6258f6f93cfc6b6cdd7121c3--chimerical-sherbet-cf310a.netlify.app/
+### tapi maaf kak ini error 404 karena memakai news API
+
 # Tim Produk
 
 Membuat produk baru, menemukan ide untuk kolaborasi dalam tim
