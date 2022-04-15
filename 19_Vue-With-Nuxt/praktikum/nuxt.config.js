@@ -43,9 +43,15 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en',
+      name: "praktikum",
+      short_name: "praktikum",
+      lang: 'id',
+      useWebManifestExtension: false,
+      start_url: "/",
+      theme_color: "#ffffff"
     },
   },
+
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
