@@ -75,3 +75,19 @@ Progressive Web Apps, memudahkan instalasi di berbagai perangkat dengan basis si
 - Service Workers
 - Icon
 - Disajikan melalui https
+
+#TASKS
+Dari penjelasan berikut, manakah yang benar tentang Nuxt?
+    Kerangka kerja yang dibangun di atas Vue yang membuat pengembangan web menjadi sederhana dan ampuh
+
+Baris perintah apakah yang merupakan setelan awal untuk memulai dan menyajikan aplikasi Nuxt pada server development?
+    npm run dev
+
+Berikut yang merupakan perbedaan routing antara Vue dan Nuxt yang benar adalah?
+    Nuxt memiliki direktory bernama pages yang membaca nama file di dalamnya untuk dijadikan route path
+
+Jika kita ingin membuat situs e-commerce, metode rendering yang tepat adalah dengan?
+    SSR
+
+Dibuat dan disempurnakan dengan API modern untuk menghadirkan peningkatan kemampuan, keandalan, dan kemudahan pemasangan sekaligus menjangkau siapa saja, di mana saja, di perangkat apa pun dengan basis kode tunggal adalah penjelasan yang paling tepat untuk?
+    Progressive Web App
