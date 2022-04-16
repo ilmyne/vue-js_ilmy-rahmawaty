@@ -2,7 +2,6 @@
   <v-row>
     <v-col v-for="(movie, idx) in movieList" :key="idx" cols="3">
       <v-card
-    :loading="loading"
     class="mx-auto my-12"
     max-width="374"
   >

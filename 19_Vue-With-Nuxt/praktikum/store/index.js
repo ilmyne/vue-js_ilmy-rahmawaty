@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
-import axios from 'axios'
 const state = () => ({
     listMovie: [],
 })
@@ -22,7 +21,7 @@ const actions = {
     },
 };
 
-export default {
+export{
     state,
     mutations,
     actions,
