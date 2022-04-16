@@ -81,7 +81,7 @@ export default {
         },
     },   
      mounted(){
-        this.$store.dispatch('movies/fetchTv')
+        this.$store.dispatch('movies/fetchMovies')
     }
 }
 </script>
