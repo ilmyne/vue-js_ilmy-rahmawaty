@@ -1,0 +1,49 @@
+query MyQuery {
+    keterangan {
+      id_anggota
+      hasR1 {
+        nama
+      }
+    }
+  }
+
+// dengan hasil
+
+{
+    "data": {
+      "keterangan": [
+        {
+          "id_anggota": 1,
+          "hasR1": {
+            "nama": "Budi"
+          }
+        },
+        {
+          "id_anggota": 2,
+          "hasR1": null
+        },
+        {
+          "id_anggota": 3,
+          "hasR1": {
+            "nama": "Sita"
+          }
+        },
+        {
+          "id_anggota": 1,
+          "hasR1": {
+            "nama": "Budi"
+          }
+        },
+        {
+          "id_anggota": 2,
+          "hasR1": null
+        },
+        {
+          "id_anggota": 3,
+          "hasR1": {
+            "nama": "Sita"
+          }
+        }
+      ]
+    }
+  }

@@ -1,0 +1,43 @@
+query MyQuery {
+    anggota {
+      id
+      haveR {
+        pelajaran
+      }
+    }
+  }
+
+// dengan hasil
+
+{
+    "data": {
+      "anggota": [
+        {
+          "id": 1,
+          "haveR": [
+            {
+              "pelajaran": "Sistem Informasi"
+            },
+            {
+              "pelajaran": "React"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "haveR": [
+            {
+              "pelajaran": "Sistem Informasi"
+            },
+            {
+              "pelajaran": "React"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "haveR": []
+        }
+      ]
+    }
+  }
