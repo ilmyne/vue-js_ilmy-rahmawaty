@@ -1,4 +1,4 @@
-# 22_Relational-Database
+# 23_Understanding-GraphQL-Query
 
 # Introduction Database
 
