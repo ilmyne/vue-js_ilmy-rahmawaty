@@ -8,6 +8,12 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: "App",
+}
+</script>
+
 <style>
 #app {
   font-family: cursive;
@@ -30,3 +36,4 @@
   color: #42b983;
 }
 </style>
+

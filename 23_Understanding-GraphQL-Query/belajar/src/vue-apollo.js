@@ -9,7 +9,8 @@ Vue.use(VueApollo)
 const AUTH_TOKEN = 'apollo-token'
 
 // Http endpoint
-const httpEndpoint = process.env.VUE_APP_GRAPHQL_HTTP || 'https://kampus-merdeka01.hasura.app/v1/graphql'
+const httpEndpoint = process.env.VUE_APP_GRAPHQL_HTTP ||
+'https://26-kampus-merdeka.hasura.app/v1/graphql'
 
 // Config
 const defaultOptions = {
@@ -17,7 +18,8 @@ const defaultOptions = {
   httpEndpoint,
   // You can use `wss` for secure connection (recommended in production)
   // Use `null` to disable subscriptions
-  wsEndpoint: process.env.VUE_APP_GRAPHQL_WS || 'ws://kampus-merdeka01.hasura.app/v1/graphql',
+  wsEndpoint: process.env.VUE_APP_GRAPHQL_WS ||
+  'ws://26-kampus-merdeka.hasura.app/v1/graphql',
   // LocalStorage token
   tokenName: AUTH_TOKEN,
   // Enable Automatic Query persisting with Apollo Engine
