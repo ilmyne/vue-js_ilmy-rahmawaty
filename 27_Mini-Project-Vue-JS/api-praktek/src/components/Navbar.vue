@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">News</a>
+        <a class="navbar-brand" href="#">DevGear</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -20,7 +20,10 @@
               <router-link class="nav-link" to="/">Home</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/details">Details</router-link>
+              <router-link class="nav-link" to="/product">Product</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/aboutview">About</router-link>
             </li>
           </ul>
         </div>
@@ -31,7 +34,7 @@
 
 <script>
 export default {
-  name: "News",
+  name: "Navbar",
 };
 </script>
 
