@@ -27,9 +27,8 @@
         <p class="pt-1 pl-5 pr-5">Latihan-HTML <a href="https://docs.google.com/document/d/1D4jp6mMxilyO1xC6n0FbAV-dg3e_YfbQv3JqHfe9Hd8/edit" target="_blank">klik disini</a></p>
 
         <div>
-        <img class="pt-1 pl-5 pr-5 pb-5" style="width:70%" src="../assets/hal index.png" alt="HTML">
-        <img class="pt-1 pl-5 pr-5 pb-5" style="width:70%" src="../assets/hal form.png" alt="HTML">
-        <img class="pt-1 pl-5 pr-5 pb-5" style="width:70%" src="../assets/hal welcome.png" alt="HTML">
+        <img class="pt-1 pl-5 pr-5 pb-5" style="width:70%" src="../assets/Tampilan index.png" alt="HTML">
+        <img class="pt-1 pl-5 pr-5 pb-5" style="width:70%" src="../assets/Tampilan form.png" alt="HTML">
         </div>
     
         

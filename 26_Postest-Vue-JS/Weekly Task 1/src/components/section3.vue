@@ -38,13 +38,6 @@
 
         <div>
         <img class="pt-1 pl-5 pr-5 pb-5" style="width:70%" src="../assets/1.png" alt="UiUx">
-        <img class="pt-1 pl-5 pr-5 pb-5" style="width:70%" src="../assets/2.png" alt="UiUx">
-        <img class="pt-1 pl-5 pr-5 pb-5" style="width:70%" src="../assets/3.png" alt="UiUx">
-        <img class="pt-1 pl-5 pr-5 pb-5" style="width:70%" src="../assets/4.png" alt="UiUx">
-        <img class="pt-1 pl-5 pr-5 pb-5" style="width:70%" src="../assets/6.png" alt="UiUx">
-        <img class="pt-1 pl-5 pr-5 pb-5" style="width:70%" src="../assets/8.png" alt="UiUx">
-        <img class="pt-1 pl-5 pr-5 pb-5" style="width:70%" src="../assets/5.png" alt="UiUx">
-        <img class="pt-1 pl-5 pr-5 pb-5" style="width:70%" src="../assets/7.png" alt="UiUx">
         
         </div>
         
