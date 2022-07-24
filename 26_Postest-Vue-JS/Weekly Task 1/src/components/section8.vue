@@ -15,8 +15,8 @@
         <p class="pt-1 pl-5 pr-5">Latihan-Javascript Refreshment <a href="https://docs.google.com/document/d/1Ke6H5HerrxYGt6QuDHtCCbqQwPUFcgGLoFI1a0n-6D8/edit" target="_blank">klik disini</a></p>
 
         <div>
-        <img class="pt-1 pl-5 pr-5 pb-5" style="width:70%" src="../assets/JS1-2.png" alt="javascript">
-        <img class="pt-1 pl-5 pr-5 pb-5" style="width:70%" src="../assets/JS3-4-5-6.png" alt="javascript">
+        <img class="pt-1 pl-5 pr-5 pb-5" style="width:70%" src="../assets/JS1-2.jpeg" alt="javascript">
+        <img class="pt-1 pl-5 pr-5 pb-5" style="width:70%" src="../assets/JS3-4-5-6.jpeg" alt="javascript">
         </div>
         
     </div>
